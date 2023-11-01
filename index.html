@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lab8</title>
+    <style>
+       body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height:100vh;
+                background: linear-gradient(to top left, #df0aaa, #00ccff);
+            }
+            .home{
+                background-color: #066dfdee;
+                padding: 70px;
+                border-radius: 50px;
+                width: 300px;
+            }
+            h2{
+                color: rgb(52, 212, 236);
+                font-size: 30px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            header{
+                text-align: center;
+                color: #fff;
+                text-transform: uppercase;
+                background: linear-gradient(to top left, #df0aaa, #00ccff);
+                padding: 1rem;
+                margin-bottom: 3rem;
+                border-radius: 5px;
+            }
+            main{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 30%;
+                padding: 10%;
+            }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="btn again">Again!</button>
+      <div class="number"></div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
